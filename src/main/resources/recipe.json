@@ -1,0 +1,38 @@
+ [
+	{
+		"dishName": "Scrambled Egg",
+		"isVeg": "N",
+		"noOfServings": "1",
+		"ingredients": [
+			"onions", "eggs"
+		],
+		"instructions": "Place the Pan on the stove and add eggs"
+	},
+	{
+		"dishName": "Palak Paneer",
+		"isVeg": "Y",
+		"noOfServings": "5",
+		"ingredients": [
+			"onions", "spinach", "paneer"
+		],
+		"instructions": "Wash Palak and place it in a pan, Simmer for 5mins"
+	},
+	{
+		"dishName": "Dosa",
+		"isVeg": "Y",
+		"noOfServings": "6",
+		"ingredients": [
+			"Dosa", "batter"
+		],
+		"instructions": "Take a Dosa Pan and pour in the Dosa"
+	},
+	{
+		"dishName": "Grilled Salmon",
+		"isVeg": "N",
+		"noOfServings": "6",
+		"ingredients": [
+			"Salmon", "Buuter"
+		],
+		"instructions": "Butter the Salmon and grill"
+	}
+]

@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:recipe_management_system;INIT=CREATE SCHEMA IF NOT EXISTS recipe_management_system
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    show-sql: true
+test-property: test-value
+  
+  
