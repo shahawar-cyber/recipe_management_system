@@ -1,4 +1,4 @@
-package com.cgi.recipe.management.system.service.integration;
+package com.cgi.recipe.management.system.controller;
 
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -33,6 +33,7 @@ import com.cgi.recipe.management.system.service.RecipeManagementService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @RunWith(SpringRunner.class)
+@SpringBootTest
 public class RecipeManagementControllerIntegrationTest {
 
 	private MockMvc mockMvc;

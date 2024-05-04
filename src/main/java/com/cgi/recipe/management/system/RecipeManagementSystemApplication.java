@@ -7,9 +7,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan("com.cgi.recipe.*")
-@EntityScan("com.cgi.recipe.*")
-@EnableJpaRepositories("com.cgi.recipe.*")
+@ComponentScan("com.cgi.recipe.management.system.*")
+@EntityScan("com.cgi.recipe.management.system.*")
+@EnableJpaRepositories("com.cgi.recipe.management.system.*")
 public class RecipeManagementSystemApplication {
 
 	public static void main(String[] args) {
