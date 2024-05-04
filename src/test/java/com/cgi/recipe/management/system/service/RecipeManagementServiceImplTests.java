@@ -15,14 +15,15 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.cgi.recipe.management.system.entity.Recipe;
 import com.cgi.recipe.management.system.repository.RecipeManagementRepository;
 import com.cgi.recipe.management.system.request.AddRecipeRequest;
+import com.cgi.recipe.management.system.request.UpdateRecipeRequest;
 import com.cgi.recipe.management.system.service.impl.RecipeManagementServiceImpl;
 
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(SpringJUnit4ClassRunner.class)
 public class RecipeManagementServiceImplTests {
 
 	@InjectMocks
@@ -66,5 +67,27 @@ public class RecipeManagementServiceImplTests {
 		assertEquals(mockRecipeList, result);
 
 	}
+
+	@Test
+	public void testAddRecipe() {
+		AddRecipeRequest addRecipeRequest = new AddRecipeRequest("Scrambled Egg", "N", "5",
+				Stream.of("eggs", "pan").collect(Collectors.toSet()),
+				"put the egg on a pan. Please keep the pan on the stove");
+
+		Recipe result = recipeManagementService.addRecipe(addRecipeRequest);
+		verify(recipeManagementRepository).findAll();
+		assertEquals(addRecipeRequest, result);
+
+	}
+	
+//	@Test
+//	public void testUpdateRecipe() {
+//		UpdateRecipeRequest updateRecipieRequest = new UpdateRecipeRequest();
+//
+//		Recipe result = recipeManagementService.updateRecipe(addRecipeRequest);
+//		verify(recipeManagementRepository).findAll();
+//		assertEquals(addRecipeRequest, result);
+//
+//	}
 
 }

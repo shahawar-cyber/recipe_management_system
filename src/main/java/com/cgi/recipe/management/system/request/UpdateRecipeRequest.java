@@ -1,6 +1,6 @@
 package com.cgi.recipe.management.system.request;
 
-import java.util.List;
+import java.util.Set;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
@@ -18,7 +18,7 @@ public class UpdateRecipeRequest {
 	
 	private String noOfServings;
 	
-	private List<String> ingredients;
+	private Set<String> ingredients;
 	
 	private String instructions;
 	
