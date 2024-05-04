@@ -10,8 +10,6 @@ import lombok.Data;
 @Data
 public class RecipeResponse {
 
-//	dish_name - String,  veg/non veg - boolean , noOfServings - int, ingredients - list<String>, instructions - string (TEXT for postgres)
-
 	private String dishName;
 	private String isVeg;
 	private String noOfServings;
