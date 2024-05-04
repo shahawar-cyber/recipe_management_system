@@ -36,7 +36,7 @@ public class RecipeManagementController {
 	RecipeManagementService recipeManagementService;
 
 	@GetMapping("/fetch")
-	public List<RecipeResponse> getrecipes() {
+	public List<RecipeResponse> getRecipes() {
 		List<Recipe> recipes = recipeManagementService.getAllRecipes();
 		List<RecipeResponse> recipeReponseList = new ArrayList();
 		recipes.stream().forEach(recipe -> {

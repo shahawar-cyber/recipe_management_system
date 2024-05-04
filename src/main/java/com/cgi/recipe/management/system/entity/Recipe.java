@@ -3,6 +3,7 @@ package com.cgi.recipe.management.system.entity;
 import java.util.Set;
 
 import com.cgi.recipe.management.system.request.AddRecipeRequest;
+import com.cgi.recipe.management.system.request.UpdateRecipeRequest;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.ElementCollection;
@@ -57,6 +58,15 @@ public class Recipe {
 		this.instructions = addRecipeRequest.getInstructions();
 		this.noOfServings = addRecipeRequest.getNoOfServings();
 		this.isVeg = addRecipeRequest.getIsVeg();
+	}
+
+	public Recipe(UpdateRecipeRequest updateRecipeRequest) {
+		this.recipeID = updateRecipeRequest.getRecipeID();
+		this.dishName = updateRecipeRequest.getDishName();
+		this.ingredients = updateRecipeRequest.getIngredients();
+		this.instructions = updateRecipeRequest.getInstructions();
+		this.noOfServings = updateRecipeRequest.getNoOfServings();
+		this.isVeg = updateRecipeRequest.getIsVeg();
 	}
 
 }

@@ -79,7 +79,7 @@ public class RecipeManagementServiceImpl implements RecipeManagementService {
 	@Override
 	public String deleteRecipe(int id) {
 		recipeManagementRepository.deleteById(id);
-		return "success";
+		return "Recipe deleted successfully";
 	}
 
 	@Override

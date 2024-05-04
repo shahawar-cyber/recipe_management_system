@@ -1,12 +1,11 @@
 package com.cgi.recipe.management.system;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringRunner.class)
 @SpringBootTest
 public class RecipeManagementSystemApplicationTests {
 
@@ -15,7 +14,7 @@ public class RecipeManagementSystemApplicationTests {
 
 	@Test
 	void contextLoads() {
-		//assertEquals("test-value", testProperty);
+		assertEquals("test-value", testProperty);
 
 	}
 
