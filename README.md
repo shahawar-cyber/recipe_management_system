@@ -20,14 +20,16 @@ Included both unit tests and integration tests for ensuring the reliability and 
 How to Run the Application:
 
 Clone Repository: 
-Clone the GitHub repository containing the application code.
 https://github.com/shahawar-cyber/recipe_management_system.git
 
 Database Setup: 
-Ensure PostgreSQL is installed and running. Create a database named recipe_management_system or configure the application properties to connect to an existing database.
+PostgreSQL installed and running locally 
+CREATE DATABASE recipe_management_system;
+psql -U your_username -d recipe_management_system
+CREATE SCHEMA recipe_management_system;
 
 Build and Run: 
-Use Maven or Gradle to build the application. Run the Spring Boot application using the command mvn spring-boot:run or ./gradlew bootRun.
+Use Maven to build the application. 
 Access API Documentation: Once the application is running, access the Swagger API documentation at http://localhost:8080/swagger-ui/index.html. Here, you can explore and test the available API endpoints.
 
 

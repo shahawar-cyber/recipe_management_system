@@ -52,8 +52,8 @@ public class DataInitializer {
 			if (!tableExists) {
 				connection.createStatement().executeUpdate(
 						"CREATE TABLE recipe_management_system.recipe_ingredients ( recipe_id INTEGER, ingredients VARCHAR)");
-				connection.createStatement().executeUpdate(
-						"CREATE TABLE recipe_management_system.recipe (id SERIAL PRIMARY KEY,dishName VARCHAR(255),isVeg BOOLEAN,noOfServings VARCHAR(100),ingredients TEXT[],instructions TEXT)");
+//				connection.createStatement().executeUpdate(
+//						"CREATE TABLE recipe_management_system.recipe (id SERIAL PRIMARY KEY,dishName VARCHAR(255),isVeg BOOLEAN,noOfServings VARCHAR(100),ingredients TEXT[],instructions TEXT)");
 			}
 		} catch (SQLException e) {
 			throw new CustomRuntimeException("Failed to create database schema", e.getMessage(),

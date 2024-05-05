@@ -43,7 +43,7 @@ public class RecipeManagementServiceImpl implements RecipeManagementService {
 	public Recipe updateRecipe(@Valid UpdateRecipeRequest updateRecipeRequest) {
 		Recipe recipe = recipeManagementRepository.findById(updateRecipeRequest.getRecipeID())
 				.orElseThrow(() -> new CustomRuntimeException("Failed to process request", "Recipe not found",
-						HttpStatus.INTERNAL_SERVER_ERROR));
+						HttpStatus.NOT_FOUND));
 
 		Map<String, Object> updateFields = new HashMap<>();
 		updateFields.put("dishName", updateRecipeRequest.getDishName());
