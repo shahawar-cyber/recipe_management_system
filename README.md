@@ -1,6 +1,7 @@
 **Architectural Choices:**
 
 Framework: 
+
 Utilized Spring Boot framework for building the standalone Java application. Spring Boot simplifies application development by providing default configurations and reducing setup overhead.
 
 Database: 
