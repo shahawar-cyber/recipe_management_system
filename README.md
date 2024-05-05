@@ -1,4 +1,4 @@
-Architectural Choices:
+**Architectural Choices:**
 
 Framework: 
 Utilized Spring Boot framework for building the standalone Java application. Spring Boot simplifies application development by providing default configurations and reducing setup overhead.
@@ -17,7 +17,7 @@ Included both unit tests and integration tests for ensuring the reliability and 
 
 
 
-How to Run the Application:
+**How to Run the Application:**
 
 Clone Repository: 
 https://github.com/shahawar-cyber/recipe_management_system.git
